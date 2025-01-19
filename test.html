@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Bookmark</title>
+</head>
+<body>
+    <h1>Create Bookmark for Grade Script</h1>
+    <p>To quickly access the grade script, drag the button below to your bookmarks bar.</p>
+    
+    <!-- Button for the user to drag to bookmarks bar -->
+    <a href="javascript:(function()%7Bvar%20userChoice%20%3D%20prompt('Enter%20%22A%22%20or%20%22B%22%20(A%3D1ST%20SEM%2C%20B%3D2ND%20SEM):')%3Bvar%20userNumber%20%3D%20prompt('Enter%20the%20value%20for%20SEMESTER%20YEAR%20(e.g.%2C%20%222324%22)')%3Bvar%20h4Elements%20%3D%20document.getElementsByTagName(%22h4%22)%3Bvar%20firstH4Text%20%3D%20h4Elements%5B0%5D%3F.textContent%20%7C%7C%20h4Elements%5B0%5D%3F.innerText%3Bvar%20lastFourNumbersMatch%20%3D%20firstH4Text%20%3F%20firstH4Text.match(%2F%5Cd%7B4%7D%28%3F%3D%5CD%2A%24%29%2F)%20%3A%20null%3Bif%20(userChoice%20%26%26%20(userChoice%20%3D%3D%20%22A%22%20%7C%7C%20userChoice%20%3D%3D%20%22B%22)%20%26%26%20userNumber%20%26%26%20!isNaN(userNumber))%7Bvar%20id%20%3D%20lastFourNumbersMatch%20%3F%20lastFourNumbersMatch%5B0%5D%20%3A%20%22%22%3Bvar%20idstring%20%3D%20%22TUPC-22-%22%20%2B%20id%3Bif%20(typeof%20openslip%20%3D%3D%20%22function%22)%7Bopenslip(idstring%2C%20userNumber%2C%20userChoice%2C%20%22Cavite%22)%3B%7Delse%7Balert(%22openslip%20function%20not%20found!%22)%3B%7D%7Delse%7Balert(%22Invalid%20input.%22)%3B%7D%7D" 
+       style="padding: 10px; background-color: #4CAF50; color: white; text-decoration: none; font-size: 16px; border-radius: 5px;">Drag me to bookmarks bar</a>
+
+    <p>If you're unable to drag the button, you can manually create the bookmark by following these steps:</p>
+    <ul>
+        <li>Open your browser's bookmark manager.</li>
+        <li>Create a new bookmark.</li>
+        <li>In the "URL" field, paste the following code:</li>
+    </ul>
+    <textarea readonly style="width: 100%; height: 100px;">
+javascript:(function()%7Bvar%20userChoice%20%3D%20prompt('Enter%20%22A%22%20or%20%22B%22%20(A%3D1ST%20SEM%2C%20B%3D2ND%20SEM):')%3Bvar%20userNumber%20%3D%20prompt('Enter%20the%20value%20for%20SEMESTER%20YEAR%20(e.g.%2C%20%222324%22)')%3Bvar%20h4Elements%20%3D%20document.getElementsByTagName(%22h4%22)%3Bvar%20firstH4Text%20%3D%20h4Elements%5B0%5D%3F.textContent%20%7C%7C%20h4Elements%5B0%5D%3F.innerText%3Bvar%20lastFourNumbersMatch%20%3D%20firstH4Text%20%3F%20firstH4Text.match(%2F%5Cd%7B4%7D%28%3F%3D%5CD%2A%24%29%2F)%20%3A%20null%3Bif%20(userChoice%20%26%26%20(userChoice%20%3D%3D%20%22A%22%20%7C%7C%20userChoice%20%3D%3D%20%22B%22)%20%26%26%20userNumber%20%26%26%20!isNaN(userNumber))%7Bvar%20id%20%3D%20lastFourNumbersMatch%20%3F%20lastFourNumbersMatch%5B0%5D%20%3A%20%22%22%3Bvar%20idstring%20%3D%20%22TUPC-22-%22%20%2B%20id%3Bif%20(typeof%20openslip%20%3D%3D%20%22function%22)%7Bopenslip(idstring%2C%20userNumber%2C%20userChoice%2C%20%22Cavite%22)%3B%7Delse%7Balert(%22openslip%20function%20not%20found!%22)%3B%7D%7Delse%7Balert(%22Invalid%20input.%22)%3B%7D%7D
+    </textarea>
+
+    <p>Once you've added the bookmark, you can click it from your bookmarks bar whenever you are on the required page.</p>
+</body>
+</html>
