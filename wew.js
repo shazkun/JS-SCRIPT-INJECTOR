@@ -1,4 +1,4 @@
-javascript:(function() {
+function() {
     var userChoice = prompt('Enter "A" or "B": A = 1ST SEM, B = 2ND SEM:').toUpperCase();
     var userNumber = prompt('Enter the value for SEMESTER YEAR, e.g., "2324":');
     
@@ -19,4 +19,4 @@ javascript:(function() {
     } else {
         alert('Invalid input');
     }
-})();
+}
